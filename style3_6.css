@@ -1,0 +1,33 @@
+table {
+    width: 400px;
+    height: 600px;
+    background-color: chartreuse;
+
+    border-collapse: collapse;
+  }
+  
+  #output-table {
+    display: none;
+  }
+  
+  .input {
+    text-align: center;
+  }
+  tr.under {
+    border-top: 1px solid black;
+  }
+  td.title {
+    border-right: 1px solid black;
+    text-align: right;
+  }
+
+  div.bloc {
+    display: inline-block;
+    position: relative;
+    left: 70px; 
+  } 
+  .output{
+      position: absolute;
+      left: 500px;
+      top: 8.5px;
+  }

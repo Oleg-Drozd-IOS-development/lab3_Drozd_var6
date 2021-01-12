@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа №3 КИУКИ-18-1 Дрозд Олег Вариант 6</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style3_6.css">
+</head>
+<body>
+  <form action="post" name="form">
+    <table>
+      <caption><h2>Форма для ввода</h2></caption>
+      <tbody>
+        <tr>
+          <th>Фамилия</th>
+          <th colspan="2">Оценки</th>
+          <td></td>
+        </tr>
+        <tr class="under">
+          <td class="input"><input type="text" name="surname"></td>
+          <td class="title">ИТех:</td>
+          <td class="input"><input type="text" name="one"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="title">МОДС:</td>
+          <td class="input"><input type="text" name="two"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="title">АК:</td>
+          <td class="input"><input type="text" name="three"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="title">СКБД:</td>
+          <td class="input"><input type="text" name="four"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="title">КСх:</td>
+          <td class="input"><input type="text" name="five"></td>
+        </tr>
+      </tbody>
+    </table><br>
+    <div class="bloc">
+      <input type="button" value="Enter" onclick="btnEnter();">
+      <input type="button" value="Random" onclick="btnRandom();">
+      <input type="button" value="Result" onclick="btngetResult();">
+    </div>
+  </form>
+  <div class="output">
+  <table id="output-table">
+    <caption><h2>Результат</h2></caption>
+    <tbody>
+      <tr>
+        <th >Категория</th>
+        <th >Количество</th>
+        <th >Студенты</th>
+      </tr>
+
+      <tr id="great"></tr>
+      <tr id="good"></tr>
+      <tr id="bad"></tr>
+    </tbody>
+  </table>
+  </div>
+</body>
+</html>
